@@ -1,0 +1,307 @@
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "issiShumski navBar";
+}
+ #navBar {
+     grid-area: navBar;
+     display: flex;
+     position: absolute;
+     right: 20px;
+     align-items: right;
+     font-family: khula, arial, sans-serif;
+ }  
+
+.issiShumski {
+    grid-area: issiShumski;
+    font-size: 40px;
+    font-family: Playfair Display, arial, sans-serif;
+}
+
+#home {
+    padding: 20px;
+}
+
+#work {
+    padding: 20px;
+}
+
+#resume {
+    padding: 20px;
+}
+
+#hero {
+    margin-top: 50px;
+    background-color: #F7E9D6;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title headshot"
+    "quote quote headshot"
+    "button button headshot";
+}
+
+.button {
+    grid-area: button;
+    height: 50px;
+    width: 200px;
+    margin-left: 400px;
+    background-color: #DE4C89;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: khula, arial, sans-serif;
+    font-size: 15px;
+}
+
+#heroTitle {
+     grid-area: title;
+     margin-left: 75px;
+     font-family: Playfair Display, arial, sans-serif;
+     font-size: 60px;
+     color: #4E3E5A;
+}
+
+#heroQuote {
+    grid-area: quote;
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: khula, arial, sans-serif;
+    color: #4E3E5A;
+}
+
+#headshot {
+    grid-area: headshot;
+    height: 550px;
+}
+    
+.information {
+    background-color: #CBD7B5;
+    color: #4E3E5A;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 25px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "backgroundTitle backgroundText backgroundText"
+    "empathy empathyText empathyText"
+    "design designText designText";
+}
+
+#background {
+    grid-area: backgroundTitle;
+    margin-left: 75px;
+    font-family: Playfair Display, arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+#backgroundText {
+    grid-area: backgroundText;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: khula, arial, sans-serif;
+}
+
+#empathy {
+    grid-area: empathy;
+    margin-left: 75px;
+    font-family: Playfair Display, arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#empathyText {
+    grid-area: empathyText;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: khula, arial, sans-serif;
+}
+
+#design {
+    grid-area: design;
+    margin-left: 75px;
+    font-family: Playfair Display, arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#designText {
+    grid-area: designText;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: khula, arial, sans-serif;
+}
+
+.content {
+    display: inline-block;
+    padding:100px;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    background-color: transparent;
+    font-family: khula, arial, sans-serif;
+    font-size: 20px;
+    margin-left: 170px;
+}
+
+.funFacts {
+    background-color: #4E3E5A;
+    color: white;
+    font-size: 30px;
+    padding: 25px;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+
+#more {
+    font-family: Playfair Display, arial, sans-serif;
+}
+
+#projectsHead {
+    font-size: 40px;
+    font-family: Playfair Display, arial, sans-serif; 
+    margin-left: 75px;
+}
+
+#more {
+    text-align: center;
+    font-family: Playfair Display, arial, sans-serif; 
+    font-size: 30px;
+    
+}
+
+#factList {
+    font-family: khula, arial, sans-serif;
+    font-size: 20px;
+}
+
+.footer {
+    font-size: 20px;
+    padding: 20px;
+    font-family: khula, arial, sans-serif;
+}
+
+#linkedIn {
+    position: absolute;
+    right: 20px;
+    margin-top: -50px;
+    background-color: #CBD7B5;
+}
+
+@media only screen and (max-width:736px) {
+   
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title" 
+        "headshot"
+        "quote" 
+        "button";
+    }
+
+    .information {
+     
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "backgroundTitle"
+        "backgroundText"
+        "empathy"
+        "empathyText"
+        "design"
+        "designText";
+    }
+
+    .button {
+        margin: auto;
+        margin-bottom:100px;
+    }
+
+    .issiShumski {
+        font-size: 30px;
+    }
+
+    #navBar {
+        font-size: 16px;
+    }
+
+    #heroTitle {
+        margin: auto;
+        font-size: 30px;
+    }
+
+    #heroQuote {
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #headshot {
+        margin: auto;
+        height: 350px;
+    }
+
+
+    #background {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    #backgroundText {
+        text-align: left;
+        font-size: 16px;
+        margin-right: 50px;
+        
+    }
+
+    #empathy {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    #empathyText {
+        font-size: 16px;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    #design {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    #designText {
+        text-align: left;
+        font-size: 16px;
+        margin-right: 50px;
+        
+    }
+
+    .content {
+        margin: 20px;
+    }
+
+    .projects {
+        text-align: center;
+    }
+
+    #projectsHead {
+        margin-right: auto;
+        margin-left: auto;
+    }
